@@ -1,0 +1,74 @@
+header{
+    background: rgb(245, 5, 5);
+}
+
+body{
+     background-image: url(../img/fondologin.jpg); 
+    background-repeat: no-repeat;
+    background-size: 100% 125%;
+    display: flex;
+    min-height: 100vh;
+    left: 300px;
+    
+
+}
+
+    
+
+
+form{
+    background-image: url(../img/logoHotel.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    
+    height: 450px;
+    width: 270px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    box-shadow: 0 0 10px rgb(71, 71, 71);
+    color: rgb(12, 10, 109);
+    padding-top: 60px;
+    margin: auto;
+
+    
+}
+
+input{
+    width: 200px;
+    margin-top: 20px;
+    background-color: #f8f8f893;
+    outline: none;
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(78, 78, 78, 0.274);
+    transition: box-shadow 0.5s ease;
+    color: rgb(19, 1, 1);
+
+}
+input[type="submit"]{
+    background: linear-gradient(#0d0e0d,#0f0000);
+    border: 0;
+    color: rgb(3, 109, 247);
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 0;
+
+}
+input[type="submit"]:hover {
+    opacity: 0.9;
+    padding: 7px 20px;
+    margin-top: 30px;
+    background: linear-gradient(#0d0e0d,#0f0000);
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(78, 78, 78, 0.274);
+    cursor: pointer;
+}
+input[type="submit"]:active {
+    transform: scale(0.95)
+}
+
+    

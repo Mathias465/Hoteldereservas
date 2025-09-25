@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Servicios</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <link href="Servicios/img/favicon.png" rel="icon">
+  <link href="Servicios/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+
+  <link href="Servicios/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="Servicios/lib/nivo-slider/css/nivo-slider.css" rel="stylesheet">
+  <link href="Servicios/lib/owlcarousel/owl.carousel.css" rel="stylesheet">
+  <link href="Servicios/lib/owlcarousel/owl.transitions.css" rel="stylesheet">
+  <link href="Servicios/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="Servicios/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="Servicios/lib/venobox/venobox.css" rel="stylesheet">
+
+  <link href="Servicios/css/nivo-slider-theme.css" rel="stylesheet">
+
+  <link href="Servicios/css/style.css" rel="stylesheet">
+
+  <link href="Servicios/css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example" onload="analizarLogueo()">
+
+  <div id="preloader"></div>
+
+  <header>
+    <div id="sticker" class="header-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+
+            <nav class="navbar navbar-default">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+                <a class="navbar-brand page-scroll sticky-logo" href="index.html">
+                  <h1><span>H</span>otel Mitad del Mundo</h1>
+								</a>
+              </div>
+              <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a class="page-scroll" href="index.html">Inicio</a>
+                      </li>
+                      <li>
+                        <a class="page-scroll" href="#home">Servicios</a>
+                      </li>
+                      <li>
+                        <a class="page-scroll" href="reservas.html">Reservas</a>
+                      </li>
+                      <li>
+                        <a class="page-scroll" href="galeria.html">Galería</a>
+                      </li>
+                      <li>
+                        <a class="page-scroll" href="restaurante.html">Restaurante</a>
+                      </li>
+                      <li>
+                        <a class="page-scroll" href="contactos.html">Contactos</a>
+                      </li>
+                      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" id="usuariologed">Usuario<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href=# id="nomb">nombre apellido</a></li>
+                          <li><a href=# onclick="logout()">Cerrar Sesión</a></li>
+                        </ul> 
+                      </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="home" class="slider-area">
+    <div class="bend niceties preview-2">
+      <div id="ensign-nivoslider" class="slides">
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="header-bg page-area">
+    <div class="home-overly"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="slider-content text-center">
+            <div class="header-bottom">
+              <div class="layer2 wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
+                <h1 class="title2">Servicios</h1>
+              </div>
+              <div class="layer3 wow zoomInUp" data-wow-duration="2s" data-wow-delay="1s">
+                <h2 class="title3">Hotel 7 Estrellas</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="blog-page area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="page-head-blog">
+            <div class="single-blog-page">
+              <form action="#">
+                <div class="search-option">
+                  <input type="text" placeholder="Buscar...">
+                  <button class="button" type="submit">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                </div>
+              </form>
+            </div>
+            <div class="single-blog-page">
+              <div class="left-blog">
+                <h4>Secciones de visita</h4>
+                <div class="recent-post">
+                  <div class="recent-single-post">
+                    <div class="post-img">
+                      <a href="#">
+												   <img src="Servicios/img/imagenes/camping3.jpeg" alt="">
+												</a>
+                    </div>
+                    <div class="pst-content">
+                      <p><a href="#"> Lugar turistico donde vas a disfrutar del campo.</a></p>
+                    </div>
+                  </div>
+                  <div class="recent-single-post">
+                    <div class="post-img">
+                      <a href="#">
+												   <img src="Servicios/img/imagenes/Cancha2.jpg" alt="">
+												</a>
+                    </div>
+                    <div class="pst-content">
+                      <p><a href="#"> Podras sacar todo ese potencial de tu cuerpo.</a></p>
+                    </div>
+                  </div>
+                  <div class="recent-single-post">
+                    <div class="post-img">
+                      <a href="#">
+												   <img src="Servicios/img/imagenes/Parrilladas.jpg" alt="">
+												</a>
+                    </div>
+                    <div class="pst-content">
+                      <p><a href="#"> Espacios hermosos para compartir en familia.</a></p>
+                    </div>
+                  </div>
+                  <div class="recent-single-post">
+                    <div class="post-img">
+                      <a href="#">
+												   <img src="Servicios/img/imagenes/pisinas1.jpg" alt="">
+												</a>
+                    </div>
+                    <div class="pst-content">
+                      <p><a href="#"> Podras decestresarte en nuestras aguas termales.</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-blog-page">
+              <div class="left-blog">
+                <h4>categorias de visita</h4>
+                <ul>
+                  <li>
+                    <a href="#">Baños termales</a>
+                  </li>
+                  <li>
+                    <a href="#">Camping</a>
+                  </li>
+                  <li>
+                    <a href="#">Sauna</a>
+                  </li>
+                  <li>
+                    <a href="#">Asadero</a>
+                  </li>
+                  <li>
+                    <a href="#">Cancha1</a>
+                  </li>
+                  <li>
+                    <a href="#">Gimnacio</a>
+                  </li>
+                  <li>
+                    <a href="#">Cabalgata</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="single-blog-page">
+              <div class="left-blog">
+                <h4>Hora de atencion</h4>
+                <ul>
+                  <li>
+                    <a href="#">lunes 6:00am a 4:00pm</a>
+                  </li>
+                  <li>
+                    <a href="#">Martes 6:00am a 4:00pm</a>
+                  </li>
+                  <li>
+                    <a href="#">Miercoles 6:00am a 4:00pm</a>
+                  </li>
+                  <li>
+                    <a href="#">Sabado 6:00am a 4:00pm</a>
+                  </li>
+                  <li>
+                    <a href="#">Domingo 6:00am a 4:00pm</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="single-blog-page">
+              <div class="left-tags blog-tags">
+                <div class="popular-tag left-side-tags left-blog">
+                  <h4>Estamos hubicados en </h4>
+                  <ul>
+                    <li>
+                      <a href="#">Arequipa</a>
+                    </li>
+                    <li>
+                      <a href="#">Camaná</a>
+                    </li>
+                    <li>
+                      <a href="#">Caravelí</a>
+                    </li>
+                    <li>
+                      <a href="#">Castilla</a>
+                    </li>
+                    <li>
+                      <a href="#">Caylloma</a>
+                    </li>
+                    <li>
+                      <a href="#">Condesuyos</a>
+                    </li>
+                    <li>
+                      <a href="#">Islay</a>
+                    </li>
+                    <li>
+                      <a href="#">La Unión</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-8 col-sm-8 col-xs-12">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="single-blog">
+                <div class="single-blog-img">
+                  <a href="blog-details.html">
+											<img src="Servicios/img/imagenes/campamento4.jpg" alt="">
+										</a>
+                </div>
+                <div class="blog-meta">
+                  <span class="comments-type">
+											<i class="fa fa-comment-o"></i>
+											<a href="#">2 El lugar fue de tu agrado</a>
+										</span>
+                  <span class="date-type">
+											<i class="fa fa-calendar"></i>2025-23-00 / 09:10:16
+										</span>
+                </div>
+                <div class="blog-text">
+                  <h4>
+											<a href="#">DISFRUTA EN FAMILIA</a>
+										</h4>
+                  <p>
+                    El dinero se termina la felicidad no....
+                  </p>
+                </div>
+                <span>
+										<a href="blog-details.html" class="ready-btn">Registrate</a>
+									</span>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="single-blog">
+                <div class="single-blog-img">
+                  <a href="blog-details.html">
+											<img src="Servicios/img/imagenes/maletas.jpg" alt="">
+										</a>
+                </div>
+                <div class="blog-meta">
+                  <span class="comments-type">
+											<i class="fa fa-comment-o"></i>
+											<a href="#">Comentarios de nuestros Clientes</a>
+										</span>
+                  <span class="date-type">
+											<i class="fa fa-calendar"></i>2020-03-05 / 09:10:16
+										</span>
+                </div>
+                <div class="blog-text">
+                  <h4>
+											<a href="#">Has tus maletas hoy mismo y visitanos</a>
+										</h4>
+                  <p>
+                   Ser feliz en familia solo depende de ti ...
+                  </p>
+                </div>
+                <span>
+										<a href="blog-details.html" class="ready-btn">Me Gusta</a>
+									</span>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="single-blog">
+                <div class="single-blog-img">
+                  <a href="blog-details.html">
+											<img src="Servicios/img/imagenes/Camas.jpg" alt="">
+										</a>
+                </div>
+                <div class="blog-meta">
+                  <span class="comments-type">
+											<i class="fa fa-comment-o"></i>
+											<a href="#">Quejas de nuestros dormitorios 0...</a>
+										</span>
+                  <span class="date-type">
+											<i class="fa fa-calendar"></i>2020-03-05 / 12:10:16
+										</span>
+                </div>
+                <div class="blog-text">
+                  <h4>
+											<a href="#">Hospedajes 7 Estrellas</a>
+										</h4>
+                  <p>
+                    Las características de un hotel de siete estrellas está por encima de los hoteles internacionales de mejores prestaciones: las habitaciones no son en su mayoría normales, sino que poseen un alto porcentaje de suites dobles de gran tamaño que pueden alcanzar precios desorbitados.
+                  </p>
+                </div>
+                <span>
+										<a href="blog-details.html" class="ready-btn">Me gusta</a>
+									</span>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="single-blog">
+                <div class="single-blog-img">
+                  <a href="blog-details.html">
+											<img src="Servicios/img/imagenes/cabalgatas.jpg" alt="">
+										</a>
+                </div>
+                <div class="blog-meta">
+                  <span class="comments-type">
+											<i class="fa fa-comment-o"></i>
+											<a href="#">5 comentarios</a>
+										</span>
+                  <span class="date-type">
+											<i class="fa fa-calendar"></i>2016-03-05 / 09:10:16
+										</span>
+                </div>
+                <div class="blog-text">
+                  <h4>
+											<a href="#">Poseemos Los mejores caballos de Ecuador</a>
+										</h4>
+                  <p>
+                    El propósito principal de la cabalgata es convivir con la naturaleza, usando al caballo como medio de transporte, ya que ayuda a moverse más rápidamente, es menos agotador, y por lo general es más fácil transitar por caminos complicados tales como ríos, montañas, zonas de inundación, etc.
+                  </p>
+                </div>
+                <span>
+										<a href="blog-details.html" class="ready-btn">Me gusta</a>
+									</span>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="single-blog">
+                <div class="single-blog-img">
+                  <a href="blog-details.html">
+											<img src="Servicios/img/imagenes/gimnasios.jpg" alt="">
+										</a>
+                </div>
+                <div class="blog-meta">
+                  <span class="comments-type">
+											<i class="fa fa-comment-o"></i>
+											<a href="#">10 commentarios</a>
+										</span>
+                  <span class="date-type">
+											<i class="fa fa-calendar"></i>2020-03-05 / 09:10:16
+										</span>
+                </div>
+                <div class="blog-text">
+                  <h4>
+											<a href="#">Gimmnacios 7 Estrellas</a>
+										</h4>
+                  <p>
+                    Estar de vacaciones no tiene porqué ser sinónimo de abandonar los buenos hábitos. Con todo el esfuerzo que representa apuntarse al gimnasio, pagar los seis meses por adelantado para conseguir el mejor precio y estar de lo más motivado, no podemos tirar todo por la borda cuando nos escapamos de viaje. 
+                    No descuides la línea y descubre los mejores hoteles con gimnasio del mundo.
+                  </p>
+                </div>
+                <span>
+										<a href="blog-details.html" class="ready-btn">Me gusta</a>
+									</span>
+              </div>
+            </div>
+            <div class="blog-pagination">
+              <ul class="pagination">
+                <li><a href="#">&lt;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">&gt;</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <footer>
+    <div class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <div class="footer-logo">
+                  <h2><span>H</span>Descripcion</h2>
+                </div>
+
+                <p>Lugar unico para pasar todas tu vacaciones muy agusto con todas personas cercanas a ti.</p>
+                <div class="footer-icons">
+                  <ul>
+                  </li> <div class="credits">
+                    
+                    TWITTER <a href="https://twitter.com/?lang=es">VISITANOS</a> <li>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                     </li>
+                     </li> <div class="credits">
+                     
+                    GOOGLE <a href="https://www.google.com/">VISITANOS</a> <li>
+                     <a href="#"><i class="fa fa-google"></i></a>
+                     </li>
+                     </li> <div class="credits">
+                      
+                    FACEBOOK <a href="https://www.facebook.com/">VISITANOS</a> <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                      </li>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h4>informacion</h4>
+                <p>
+                  Nuestras instalaciones son unicas no te confundas nosotros somos los mejores.
+                </p>
+                <div class="footer-contacts">
+                  <p><span>Tel:</span> +51 941269413</p>
+                  <p><span>Email:</span> contact@AqpWorld.com</p>
+                  <p><span>Horario fijo</span> 9am-5pm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h4>Instagram</h4>
+                <div class="flicker-img">
+                  <a href="#"><img src="Servicios/img/portfolio/1.jpg" alt=""></a>
+                  <a href="#"><img src="Servicios/img/portfolio/2.jpg" alt=""></a>
+                  <a href="#"><img src="Servicios/img/portfolio/3.jpg" alt=""></a>
+                  <a href="#"><img src="Servicios/img/portfolio/4.jpg" alt=""></a>
+                  <a href="#"><img src="Servicios/img/portfolio/5.jpg" alt=""></a>
+                  <a href="#"><img src="Servicios/img/portfolio/6.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-area-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="copyright text-center">
+              <p>
+                &copy; Copyright <strong>Hotel AqpWorld</strong>. All Rights Reserved
+              </p>
+            </div>
+            <div class="credits">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <script src="Servicios/lib/jquery/jquery.min.js"></script>
+  <script src="Servicios/lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="Servicios/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="Servicios/lib/venobox/venobox.min.js"></script>
+  <script src="Servicios/lib/knob/jquery.knob.js"></script>
+  <script src="Servicios/lib/wow/wow.min.js"></script>
+  <script src="Servicios/lib/parallax/parallax.js"></script>
+  <script src="Servicios/lib/easing/easing.min.js"></script>
+  <script src="Servicios/lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+  <script src="Servicios/lib/appear/jquery.appear.js"></script>
+  <script src="Servicios/lib/isotope/isotope.pkgd.min.js"></script>
+
+  <script src="Servicios/contactform/contactform.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+
+  <script src="Servicios/js/main.js"></script>
+  <script src="Login/appLogin.js"></script>
+</body>
+<i class="fa fa-cog fa-spin fa-3x fa-fw" aria-hidden="true"></i>
+<span class="sr-only">Saving. Hang tight!</span>
+</html>

@@ -1,0 +1,836 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hotel AqpWorld!</title>
+  <meta content="width=device-width, initial-scale=1.0" name="ProyectoWebt">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <link href="inicio/img/favicon.png" rel="icon">
+  <link href="inicio/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+
+  <link href="inicio/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="inicio/lib/nivo-slider/css/nivo-slider.css" rel="stylesheet">
+  <link href="inicio/lib/owlcarousel/owl.carousel.css" rel="stylesheet">
+  <link href="inicio/lib/owlcarousel/owl.transitions.css" rel="stylesheet">
+  <link href="inicio/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="inicio/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="inicio/lib/venobox/venobox.css" rel="stylesheet">
+  
+  <link href="Inicio/css/nivo-slider-theme.css" rel="stylesheet">
+
+  <link href="Inicio/css/style.css" rel="stylesheet">
+
+  <link href="Inicio/css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example" onload="analizarLogueo()">
+
+  <div id="preloader"></div>
+
+  <header>
+    <div id="sticker" class="header-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+
+            <nav class="navbar navbar-default">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+                <a class="navbar-brand page-scroll sticky-logo" href="index.html">
+                  <h1><span>H</span>otel AqpWorld!</h1>
+                  
+								</a>
+              </div>
+              <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active">
+                    <a class="page-scroll" href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="servicios.html">Servicios</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="reservas.html">Reservas</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="galeria.html">Galería</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="restaurante.html">Restaurante</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="contactos.html">Contactos</a>
+                  </li>
+                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" id="usuariologed">Usuario<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href=# id="nomb">nombre apellido</a></li>
+                      <li><a href=# onclick="logout()">Cerrar Sesión</a></li>
+                    </ul> 
+                  </li>
+
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="home" class="slider-area">
+    <div class="bend niceties preview-2">
+      <div id="ensign-nivoslider" class="slides">
+        <img src="Inicio/img/slider/slider1.jpg" alt="" title="#slider-direction-1" />
+        <img src="Inicio/img/slider/slider2.jpg" alt="" title="#slider-direction-2" />
+        <img src="Inicio/img/slider/slider3.jpg" alt="" title="#slider-direction-3" />
+      </div>
+
+      <div id="slider-direction-1" class="slider-direction slider-one">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="slider-content">
+                <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
+                  <h2 class="title1">BIENVENIDO </h2>
+                </div>
+                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                  <h1 class="title2">Hotel AqpWorld! Has Tus Reservaciones Aquí</h1>
+                </div>
+                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <a class="ready-btn right-btn page-scroll" href="Login/login.html">Ingresa con tu cuenta</a>
+                  <a class="ready-btn page-scroll" href="Registro/registro.html">Crear cuenta</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="slider-direction-2" class="slider-direction slider-two">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="slider-content text-center">
+                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <h2 class="title1" >DISFRUTA</h2>
+                </div>
+                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                  <h1 class="title2">Los mejores servicios del Perú</h1>
+                </div>
+                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <a class="ready-btn right-btn page-scroll" href="Login/login.html">Ingresa con tu cuenta</a>
+                  <a class="ready-btn page-scroll" href="Registro/registro.html">Crear cuenta</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="slider-direction-3" class="slider-direction slider-two">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="slider-content">
+                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <h2 class="title1">NO TE QUEDES SIN RESERVACIONES</h2>
+                </div>
+                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                  <h1 class="title2">Hospedaje las 24 horas del día</h1>
+                </div>
+                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <a class="ready-btn right-btn page-scroll" href="Login/login.html">Ingresa con tu cuenta</a>
+                  <a class="ready-btn page-scroll" href="Registro/registro.html">Crear cuenta</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="about-area area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h2>CONOCE NUESTRA HISTORIA</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="well-left">
+            <div class="single-well">
+              <a href="#">
+								  <img src="Inicio/img/hotel2.jpg" wid th="500" height="500" alt="">
+								</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="well-middle">
+            <div class="single-well">
+              <a href="#">
+                <h4 class="sec-head">Hotel AqpWorld!</h4>
+              </a>
+              <p>
+                Descubre por qué tantos viajeros consideran Hotel Hello World! como la elección ideal al visitar Arequipa. Ubicado en el corazón de la “Ciudad Blanca”, nuestro hotel combina calidad, comodidad y una ubicación privilegiada, rodeado de la arquitectura colonial y la belleza de los volcanes que hacen única a esta ciudad.
+
+
+                En Hotel Hello World! encontrarás recepción abierta las 24 horas y servicio de resguardo de equipaje para tu tranquilidad. Además, podrás disfrutar de un restaurante con gastronomía arequipeña y platos internacionales preparados con ingredientes locales.
+
+                Si viajas en coche, tendrás acceso a estacionamiento gratuito. Todo esto hace de Hotel Hello World! un espacio pensado para viajeros como tú, que buscan una experiencia auténtica en Arequipa, con la calidez y hospitalidad que caracterizan a su gente.
+              </p>
+              <ul>
+                <li>
+                  <i class="fa fa-check"></i> Un excelente lugar para descansar
+                </li>
+                <li>
+                  <i class="fa fa-check"></i> Habitaciones comodos
+                </li>
+                <li>
+                  <i class="fa fa-check"></i> Contamos con nuestro propio garaje
+                </li>
+                <li>
+                  <i class="fa fa-check"></i> Piscinas, Restaurante y Area verde
+                </li>
+                <li>
+                  <i class="fa fa-check"></i> Para que descanses como nunca
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="about" class="about-area area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="well-left">
+            <div class="single-well">
+              <a href="#">
+								  <img src="Inicio/img/HOTEL 1.jpg" width="500" height="500" alt="">
+								</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="well-middle">
+            <div class="single-well">
+              <a href="#">
+                <h4 class="sec-head">Un Lugar Para Descansar</h4>
+              </a>
+              <p>
+Todos necesitamos un momento para descansar, ya sea después de recorrer el Monasterio de Santa Catalina, caminar por la Plaza de Armas o asistir a un evento en la Ciudad Blanca. Muchas veces, al visitar Arequipa, uno busca un espacio tranquilo para leer, escuchar música, contemplar el Misti o simplemente relajarse en silencio.                <p>
+En los viajes o estancias por trabajo y congresos, suele ser difícil encontrar un rincón propio, especialmente si el hospedaje es pequeño o compartido. Por eso, acondicionar un área de descanso dentro del dormitorio o en un ambiente con estilo arequipeño se vuelve esencial. Un sillón cómodo junto a una ventana con vista a los volcanes o un rincón decorado con sillar puede ser suficiente para recuperar energías.
+              </p>
+              <p>El visitante sabio es aquel que sabe escucharse a sí mismo, que aprecia la calma y respeta el entorno que lo acoge. Sus momentos de pausa se transforman en recuerdos valiosos, igual que las frases que se guardan de un buen viaje por Arequipa.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center;" >
+    <iframe width="800" height="460" style="float: center;" src="https://www.youtube.com/embed/IB9p4PeXqPo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <br>
+  <div id="about" class="about-area area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="well-left">
+            <div class="single-well">
+              <a href="#">
+								  <img src="Inicio/img/b.jpg" width="500" height="500" alt="">
+								</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="well-middle">
+            <div class="single-well">
+              <a href="#">
+                <h4 class="sec-head">Compitiendo con los mejores Hoteles del Mundo</h4>
+              </a>
+              <p>
+  El turismo en Arequipa se ha consolidado como una de las principales fuentes de ingresos y un sector que sobresale frente a otros en la región. La industria hotelera y de servicios recibe cada año a miles de visitantes que llegan atraídos por el encanto de la Ciudad Blanca, su centro histórico, su gastronomía y sus paisajes únicos.
+</p>
+
+<p>
+  Si formas parte del equipo de trabajo de este sector, sabrás lo dinámico que puede ser. En caso de estar iniciando un negocio o buscando mejorar su rendimiento, es clave entender las tendencias actuales del mercado turístico.
+</p>
+
+<p>
+  La llegada de Internet y el uso masivo de las plataformas digitales han transformado el negocio hotelero en Arequipa. Muchos empresarios han optado por sumarse a campañas de marketing digital y a la presencia en portales de reservas en línea, lo que permite mayor visibilidad del hotel y sus servicios. Esto se traduce en un posicionamiento más fuerte y en mayores ingresos frente a la competencia.
+</p>
+              
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="about" class="about-area area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="well-left">
+            <div class="single-well">
+              <a href="#">
+								  <img src="Inicio/img/h.jpg" width="500" height="500" alt="">
+								</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="well-middle">
+            <div class="single-well">
+              <a href="#">
+                <h4 class="sec-head">Siempre pensando en ti </h4>
+              </a>
+              <p>
+  En Arequipa, el trato cordial del personal en un hotel, la limpieza constante, el cuidado en la preparación de la gastronomía local —como la tradicional rocoto relleno o el chupe de camarones— y un equipo de entretenimiento bien organizado son aspectos que no deben descuidarse. Estos detalles permiten que un alojamiento destaque frente a otros de la Ciudad Blanca.
+</p>
+
+<p>
+  Ante una competencia hotelera cada vez más exigente, resulta fundamental manejar con soltura la empatía hacia el visitante. Un servicio impecable en la recepción, acompañado del dominio de idiomas y la capacidad de resolver cualquier inconveniente o solicitud, eleva la experiencia del huésped. Estos factores incrementan la valoración del hotel en comparación con la competencia.
+</p>
+
+<p>
+  Son pequeños detalles que marcan la diferencia si tu propósito es posicionarte mejor en el sector hotelero arequipeño y atraer más visitantes a la región.
+</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="slider-direction-3" class="slider-direction slider-two">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="slider-content">
+            <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+              <h2 class="title1">NO TE QUEDES SIN RESERVACIONES</h2>
+            </div>
+            <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+              <h1 class="title2">Hospedaje las 24 horas del día</h1>
+            </div>
+            <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+              <a class="ready-btn right-btn page-scroll" href="#services">Ingresa con tu cuenta</a>
+              <a class="ready-btn page-scroll" href="#about">Crear cuenta</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  <div class="wellcome-area">
+    <div class="well-bg">
+      <div class="test-overly"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="wellcome-text">
+              <div class="well-text text-center">
+                <h2>BIENVENIDOS A NUESTROS SERVICIOS HOTELEROS</h2>
+                <p>
+                  Todos necesitamos algún momento para estar solos, para disfrutar de la lectura, de la música que nos gusta, practicar la meditación o ver un poco la tele sin nadie más alrededor
+                </p>
+                <div class="subs-feilds">
+                  <div class="suscribe-input">
+                    <input type="email" class="email form-control width-80" id="sus_email" placeholder="Email">
+                    <button type="submit" id="sus_submit" class="add-btn width-20">Subscribe</button>
+                    <div id="msg_Submit" class="h3 text-center hidden"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="team" class="our-team-area area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h2>NUESTROS CLIENTES SATISFECHOS</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="team-top">
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              <div class="team-img">
+                <a href="#">
+										<img src="Inicio/img/adrian.jpg" alt="Foto de Adrian SantaCruz">
+									</a>
+                <div class="team-social-icon text-center">
+                  <ul>
+                    <li>
+                      <a href="https://web.facebook.com/sjoeleche">
+													<i class="fa fa-facebook"></i>
+												</a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=RLQQM7voqRA">
+													<i class="fa fa-twitter"></i>
+												</a>
+                    </li>
+                    <li>
+                      <a href="#">
+													<i class="fa fa-instagram"></i>
+												</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="team-content text-center">
+                <h4>Edgar Adrián Santa Cruz Quispe</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              <div class="team-img">
+                <a href="#">
+										<img src="Inicio/img/matias.jpg" alt="Foto de Mathias Apaza">
+									</a>
+                <div class="team-social-icon text-center">
+                  <ul>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=RLQQM7voqRA">
+													<i class="fa fa-facebook"></i>
+												</a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=RLQQM7voqRA">
+													<i class="fa fa-twitter"></i>
+												</a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=RLQQM7voqRA">
+													<i class="fa fa-instagram"></i>
+												</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="team-content text-center">
+                <h4>Apaza Cornejo Mathias Luis Andre</h4>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              <div class="team-img">
+                <a href="#">
+										<img src="Inicio/img/hector.jpg" alt="Foto de Hector Hinojosa xd">
+									</a>
+                <div class="team-social-icon text-center">
+                  <ul>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=RLQQM7voqRA">
+													<i class="fa fa-facebook"></i>
+												</a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=RLQQM7voqRA">
+													<i class="fa fa-twitter"></i>
+												</a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=RLQQM7voqRA">
+													<i class="fa fa-instagram"></i>
+												</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="team-content text-center">
+                <h4>Torres Vargas Nilson Steven</h4>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-3 col-xs-12">
+  <div class="single-team-member">
+    <div class="team-img">
+      <a href="#">
+        <img src="Inicio/img/ing.jpg" alt="Foto de ING. Montesinos Murillo Angel Felipe">
+      </a>
+      <div class="team-social-icon text-center">
+        <ul>
+          <li>
+            <a href="https://web.facebook.com/juan.chimarro.7">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=RLQQM7voqRA">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/juan1992ldu?igshid=1cwmx0npdi1zl">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="team-content text-center">
+      <h4>ING. Montesinos Murillo Angel Felipe</h4>
+    </div>
+  </div>
+</div>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="portfolio" class="portfolio-area area-padding fix">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h2>PUEDES DISFRUTAR</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        
+        <div class="awesome-project-1 fix">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="awesome-menu ">
+              <ul class="project-menu">
+                <li>
+                  <a href="#" class="active" data-filter="*">Todos los servicios</a>
+                </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="awesome-project-content">
+          <div class="col-md-4 col-sm-4 col-xs-12 design development">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="Inicio/img/h.jpg" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="Inicio/img/h.jpg">
+                      <h4>Habitaciones</h4>
+                      
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 col-sm-4 col-xs-12 photo">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="Inicio/img/re1.jpg" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="Inicio/img/portfolio/2.jpg">
+                      <h4>Restaurante</h4>
+                      
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 col-sm-4 col-xs-12 design">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="Inicio/img/gin.jpg" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="Inicio/img/portfolio/3.jpg">
+                      <h4>Gignasio</h4>
+                      
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+          <div class="col-md-4 col-sm-4 col-xs-12 photo development">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="Inicio/img/are.jpg" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="Inicio/img/portfolio/4.jpg">
+                      <h4>Areas Verdes</h4>
+                      
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 col-sm-4 col-xs-12 development">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="Inicio/img/pis.jpg" alt="" /></a>
+                <div class="add-actions text-center text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="Inicio/img/portfolio/5.jpg">
+                      <h4>Piscinas</h4>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 col-sm-4 col-xs-12 design photo">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="Inicio/img/par.jpg" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="Inicio/img/portfolio/6.jpg">
+                      <h4>Nuestro Parquedero</h4>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="contact" class="contact-area">
+    <div class="contact-inner area-padding">
+      <div class="contact-overly"></div>
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+
+              <h2>Contactos</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="contact-icon text-center">
+              <div class="single-icon">
+                <i class="fa fa-mobile"></i>
+                <p>
+                  Call: 941269413<br>
+                  <span>Lunes a Domingo (24 HRS)</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="contact-icon text-center">
+              <div class="single-icon">
+                <i class="fa fa-envelope-o"></i>
+                <p>
+                  Email: AqpWorld_@hotmail.com<br>
+                  <span>Web: www.AqpWorldPe.html</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="contact-icon text-center">
+              <div class="single-icon">
+                <i class="fa fa-map-marker"></i>
+                <p>
+                  Direcciòn: Urbanizacion La Colina<br>
+                  <span>Arequia-Peru</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2101.663135462878!2d-71.55992804185989!3d-16.43818931029653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1758754991111!5m2!1ses-419!2spe" width="550" height="400" style="border:10px;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="form contact-form">
+              <div id="sendmessage">Mensaje Enviado Gracias</div>
+              <div id="errormessage"></div>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombres" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensaje"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <div class="footer-logo">
+                  <h2><span>visita</span>NUESTRAS REDES SOCIALES</h2>
+                </div>
+
+                <p>Para mayor  informacion puedes visitar nuestras redes sociales, mantente informado de nuestras actualizaciones</p>
+
+                <div class="footer-icons">
+                  <ul>
+                    <li>
+                      <a href="https://web.facebook.com/Hostal-Mitad-del-Mundo-656385264432038/"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/mitadmundo?lang=es"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://www.tripadvisor.es/Hotel_Review-g940020-d10671502-Reviews-Hosteria_Mitad_del_Mundo-Cayambe_Pichincha_Province.html"><i class="fa fa-google"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/mitaddelmundoec/?hl=es-la"><i class="fa fa-instagram "></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                
+                <p>
+                  Nuestra informacion es primordial para nuestros clientes 
+                </p>
+                <div class="footer-contacts">
+                  <p><span>Tel:</span>  +51 941 269 413</p>
+                  <p><span>Email:</span> aqpworld_@hotmail.com</p>
+                  <p><span>Las 24 Horas:</span>Lunes a Domingo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    <div class="footer-area-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="copyright text-center" style="background: pink;">
+              <p>
+                &copy; Copyright <strong>Guido@_Chiquimba</strong>.2020-2021
+              </p>
+            </div>
+            <div class="credits">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <script src="Inicio/lib/jquery/jquery.min.js"></script>
+  <script src="Inicio/lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="Inicio/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="Inicio/lib/venobox/venobox.min.js"></script>
+  <script src="Inicio/lib/knob/jquery.knob.js"></script>
+  <script src="Inicio/lib/wow/wow.min.js"></script>
+  <script src="Inicio/lib/parallax/parallax.js"></script>
+  <script src="Inicio/lib/easing/easing.min.js"></script>
+  <script src="Inicio/lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+  <script src="Inicio/lib/appear/jquery.appear.js"></script>
+  
+  
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+  
+  <script src="Inicio/lib/isotope/isotope.pkgd.min.js"></script>
+
+  <script src="Inicio/contactform/contactform.js"></script>
+
+  <script src="Inicio/js/main.js"></script>
+  <script src="Login/appLogin.js"></script>
+</body>
+
+</html>

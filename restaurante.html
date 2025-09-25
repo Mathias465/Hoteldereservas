@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Restaurante</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <link href="Restaurante/img/favicon.png" rel="icon">
+  <link href="Restaurante/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+
+  <link href="Restaurante/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="Restaurante/lib/nivo-slider/css/nivo-slider.css" rel="stylesheet">
+  <link href="Restaurante/lib/owlcarousel/owl.carousel.css" rel="stylesheet">
+  <link href="Restaurante/lib/owlcarousel/owl.transitions.css" rel="stylesheet">
+  <link href="Restaurante/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="Restaurante/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="Restaurante/lib/venobox/venobox.css" rel="stylesheet">
+  
+  <link href="Restaurante/css/nivo-slider-theme.css" rel="stylesheet">
+
+  <link href="Restaurante/css/style.css" rel="stylesheet">
+
+  <link href="Restaurante/css/responsive.css" rel="stylesheet">
+
+  
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example" onload="analizarLogueo()">
+
+  <div id="preloader"></div>
+
+  <header>
+    <div id="sticker" class="header-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+
+            <nav class="navbar navbar-default">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+                <a class="navbar-brand page-scroll sticky-logo" href="index.html">
+                    <h1><span>H</span>otel AqpWorld</h1>
+                  
+								</a>
+              </div>
+              <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active">
+                    <a class="page-scroll" href="index.html">Inicio</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="servicios.html">Servicios</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="reservas.html">Reservas</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="galeria.html">Galería</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#home">Restaurante</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="contactos.html">Contactos</a>
+                  </li>
+                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" id="usuariologed">Usuario<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href=# id="nomb">nombre apellido</a></li>
+                      <li><a href=# onclick="logout()">Cerrar Sesión</a></li>
+                    </ul> 
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="home" class="slider-area">
+    <div class="bend niceties preview-2">
+      <div id="ensign-nivoslider" class="slides">
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="header-bg page-area">
+    <div class="home-overly"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="slider-content text-center">
+            <div class="header-bottom">
+              <div class="layer2 wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
+                <h1 class="title2">Platos a la carta </h1>
+              </div>
+              <div class="layer3 wow zoomInUp" data-wow-duration="2s" data-wow-delay="1s">
+                <h2 class="title3">servicio  a la habitacion</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="blog-page area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="page-head-blog">
+            <div class="single-blog-page">
+              <form action="#">
+                <div class="search-option">
+                  <input type="text" placeholder="Search...">
+                  <button class="button" type="submit">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                </div>
+              </form>
+            </div>
+            <div class="single-blog-page">
+              <div class="left-blog">
+                <h4>Nuestras Especialidades</h4>
+                <div class="recent-post">
+                  <div class="recent-single-post">
+                    <div class="post-img">
+                      <a href="#">
+						 <img src="Restaurante/img/blog/1.jpg" alt="">
+					</a>
+                    </div>
+                    <div class="pst-content">
+                      <p><a href="#">Brochetas de cordero con salsa de maracuya.</a></p>
+                    </div>
+                  </div>
+                  <div class="recent-single-post">
+                    <div class="post-img">
+                      <a href="#">
+												   <img src="Restaurante/img/blog/2.jpg" alt="">
+												</a>
+                    </div>
+                    <div class="pst-content">
+                      <p><a href="#"> Hamburguesa Americana con carne  de ternera.</a></p>
+                    </div>
+                  </div>
+                  <div class="recent-single-post">
+                    <div class="post-img">
+                      <a href="#">
+												   <img src="Restaurante/img/blog/3.jpg" alt="">
+												</a>
+                    </div>
+                    <div class="pst-content">
+                      <p><a href="#">  Parrillada individual.</a></p>
+                    </div>
+                  </div>
+                  <div class="recent-single-post">
+                    <div class="post-img">
+                      <a href="#">
+												   <img src="Restaurante/img/blog/4.jpg" alt="">
+												</a>
+                    </div>
+                    <div class="pst-content">
+                      <p><a href="#"> Parrilladas  familiar.</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-blog-page">
+              
+              <section id="info">conosca
+                          
+                <section id="izq">
+                  <H1>NUESTRA COCINA</H1>
+                <iframe src="Restaurante/img/imagenrestaurant/videococina.mp4" width="380" height="300" frameborder="0"  allowfullscreen></iframe>
+                </section>
+              <div class="left-blog">
+                <h4>Reservaciones</h4>
+                <ul>
+                  <li>
+                    <a href="#">Reservar Restaurante</a>
+                  </li>
+                  
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="single-blog-page">
+              <div class="left-blog">
+                <h4>Eventos</h4>
+                <ul>
+                  <li>
+                    <a href="#">14 de febrero 2025</a>
+                  </li>
+                  <li>
+                    <a href="#">8 de marzo 2025</a>
+                  </li>
+                 
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="single-blog-page">
+              <div class="left-tags blog-tags">
+                <div class="popular-tag left-side-tags left-blog">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 col-sm-8 col-xs-12">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <article class="blog-post-wrapper">
+                
+                <div class="slider">
+                  <ul>
+                    <li><img src="Restaurante/img/imagenrestaurant/res1.jpg" width="600" height="450" alt=""></li>
+                    <li> <img src="Restaurante/img/imagenrestaurant/res2.jpg" width="600" height="450"> </li>
+                    <li> <img src="Restaurante/img/imagenrestaurant/res3.jpg" width="600" height="450" > </li>
+                    <li> <img src="Restaurante/img/imagenrestaurant/res4.jpg" width="600" height="450" > </li>
+                  </ul>
+
+                </div>
+                <div class="post-information">
+                  <div class="entry-meta">
+                    <span class="author-meta"><i class="fa fa-user"></i> <a href="#">admin</a></span>
+                    <span><i class="fa fa-clock-o"></i> Abril  05, 2025</span>
+                    <span class="tag-meta">
+												<i class="fa fa-folder-o"></i>
+												
+											</span>
+                    <span>
+											</span>
+                    <span><i class="fa fa-comments-o"></i> <a href="#">Chef  Luis Perugachi </a></span>
+                  </div>
+                  <div class="entry-content">
+                    <p>Los platos tradicionales y su gastronomía sitúan al establecimiento como un claro referente entre los restaurantes de comida tipica de Cayambe y sus excelentes 
+                      preparaciones se complementan con un sevicio de bar. El restaurante del Hotel  Mitad del Mundo se especializa tanto en asados como comida tradicional. 
+                       Dese el gusto de visitar un restaurante en Cayambe y deleite su paladar con nuestra cocina.
+                      </p>
+                    <blockquote>
+                      <p>♥ ♥Este servicio ha tomado medidas de higiene y
+                         salud especiales por que la seguridad es lo mas importatante.♥ ♥</p>
+                    </blockquote>
+                    <p>Además, no solo se quedará asombrado con la experiencia 
+                      gastronómica de calidad que lebrindamos en Techo del Mundo.
+                       También contamos con las mejores vistas de un restaurante de comida típica en Cayambe.
+                        Situado en la última planta del Hotel Mitad Del Mundo , 
+                        comerá con espectaculares vistas de la ciudad. 
+                      Un ambiente único y gourmet para sus desayunos, comidas o cenas ¡Le esperamos!</p>
+                  </div>
+                </div>
+              </article>
+              <div class="clear"></div>
+              <div class="single-post-comments">
+                <div class="comments-area">
+                  <div class="comments-heading">
+                    <h3><span>C</span>omentarios</h3>
+                    
+                    
+                  </div>
+                  <div class="comments-list">
+                    <ul>
+                      <li class="threaded-comments">
+                        <div class="comments-details">
+                          <div class="comments-list-img">
+                            <img src="Restaurante/img/blog/b2.jpg" alt="post-author">
+                          </div>
+                          <div class="comments-content-wrap">
+                            <span>
+																<b><a href="#">Gabriel Mendoza</a></b>
+																Post author
+																<span class="post-time">Octubre 6,2020 at 4:25 pm</span>
+                            <a href="#">Reply</a>
+                            </span>
+                            <p>Excelente gastronomia de la localidad , volvere muy pronto</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="comments-details">
+                          <div class="comments-list-img">
+                            <img src="Restaurante/img/blog/b1.jpg" alt="post-author">
+                          </div>
+                          <div class="comments-content-wrap">
+                            <span>
+																<b><a href="#">admin</a></b>
+																Post author
+																<span class="post-time">Octubre 6, 2020 at 6:18 pm </span>
+                            <a href="#">Reply</a>
+                            </span>
+                            <p>Gracias por preferirinos, lo estaremos esperando</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="threaded-comments">
+                        <div class="comments-details">
+                          <div class="comments-list-img">
+                            <img src="Restaurante/img/blog/b3.jpg" alt="post-author">
+                          </div>
+                          <div class="comments-content-wrap">
+                            <span>
+																<b><a href="#">Maria Molina</a></b>
+																Post author
+																<span class="post-time">Marzo 08, 2021 at 7:25 pm</span>
+                            <a href="#">Reply</a>
+                            </span>
+                            <p>tine muy bonita vista por las noches el restaurante ofrece muy buenas elecciones de platilllos exquisitos saludos.</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="comment-respond">
+                  <h3 class="comment-reply-title">Dejenos sus comentarios </h3>
+                  <form action="#">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <p>Nombre *</p>
+                        <input type="text" />
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <p>Email *</p>
+                        <input type="email" />
+                      </div>
+                      <div class="col-lg-12 col-md-12 col-sm-12 comment-form-comment">
+                        <textarea id="message-box" cols="30" rows="10"></textarea>
+                        <input type="submit" value="Enviar Comentario" />
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+
+  <footer>
+    <div class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <div class="footer-logo">
+                  <h2><span>S</span>iguenos</h2>
+                </div>
+
+                <p>buscanos en nuestras redes sociales y enterate de las promociones y descuentos 
+                  que tiene Hotel AqpWorld en las diferentes temporadas, Grandes descuentos a 
+                   grupos y familias que nos siguen.
+               </p>
+                <div class="footer-icons">
+                  <ul>
+                    <li>
+                      <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-google"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div id="map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.817442025102!2d-78.14994338626566!3d0.038017799972267424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2a08f858dd397f%3A0x2d5d4d5f23e67443!2sPARQUE%20RUBEN%20RODRIGUEZ!5e0!3m2!1ses!2sec!4v1617499170611!5m2!1ses!2sec" 
+                  width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h2><span>C</span>ontactos</h2>
+               
+                <p>
+                  
+                </p>
+                <div class="footer-contacts">
+                  <p><span>Telf:</span> +51 941 269 413</p>
+                  <p><span>Email:</span> hotelAqpWorld@gmail.com</p>
+                  <p><span>Horario de Atencion del restaurante:</span> 9am-6pm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h2><span>I</span>nstagram</h2>
+                
+                <div class="flicker-img">
+                  <a href="#"><img src="Restaurante/img/portfolio/1.jpg" alt=""></a>
+                  <a href="#"><img src="Restaurante/img/portfolio/2.jpg" alt=""></a>
+                  <a href="#"><img src="Restaurante/img/portfolio/3.jpg" alt=""></a>
+                  <a href="#"><img src="Restaurante/img/portfolio/4.jpg" alt=""></a>
+                  <a href="#"><img src="Restaurante/img/portfolio/5.jpg" alt=""></a>
+                  <a href="#"><img src="Restaurante/img/portfolio/6.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-area-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="copyright text-center">
+              <p>
+                &copy; Copyright <strong>eBusiness</strong>. All Rights Reserved
+              </p>
+            </div>
+            <div class="credits">
+              Designed by Geovanny Conlago</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <script src="Restaurante/lib/jquery/jquery.min.js"></script>
+  <script src="Restaurante/lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="Restaurante/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="Restaurante/lib/venobox/venobox.min.js"></script>
+  <script src="Restaurante/lib/knob/jquery.knob.js"></script>
+  <script src="Restaurante/lib/wow/wow.min.js"></script>
+  <script src="Restaurante/lib/parallax/parallax.js"></script>
+  <script src="Restaurante/lib/easing/easing.min.js"></script>
+  <script src="Restaurante/lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+  <script src="Restaurante/lib/appear/jquery.appear.js"></script>
+  <script src="Restaurante/lib/isotope/isotope.pkgd.min.js"></script>
+
+  <script src="Restaurante/contactform/contactform.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+
+  <script src="Restaurante/js/main.js"></script>
+  <script src="Login/appLogin.js"></script>
+</body>
+
+</html>

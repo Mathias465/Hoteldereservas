@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Reservas</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <link href="Reservas/img/favicon.png" rel="icon">
+  <link href="Reservas/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
+    rel="stylesheet">
+
+  <link href="Reservas/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="Reservas/lib/nivo-slider/css/nivo-slider.css" rel="stylesheet">
+  <link href="Reservas/lib/owlcarousel/owl.carousel.css" rel="stylesheet">
+  <link href="Reservas/lib/owlcarousel/owl.transitions.css" rel="stylesheet">
+  <link href="Reservas/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="Reservas/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="Reservas/lib/venobox/venobox.css" rel="stylesheet">
+
+  <link href="Reservas/css/nivo-slider-theme.css" rel="stylesheet">
+
+  <link href="Reservas/css/style.css" rel="stylesheet">
+
+  <link href="Reservas/css/responsive.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="Reservas/css/calendario.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="Reservas/css/demoDialog.css">
+  <link rel="stylesheet" href="Reservas/css/dialogo-confirm.css">
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example" onload="analizarLogueo()">
+
+  <div id="preloader"></div>
+
+  <header>
+    <div id="sticker" class="header-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+
+            <nav class="navbar navbar-default">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                  data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll sticky-logo" href="index.html">
+                  <h1><span>H</span>otel AqpWorld </h1>
+                  
+              </div>
+              <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active">
+                    <a class="page-scroll" href="index.html">Inicio</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="servicios.html">Servicios</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#home">Reservas</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="galeria.html">Galería</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="restaurante.html">Restaurante</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="contactos.html">Contactos</a>
+                  </li>
+
+                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                      id="usuariologed">Usuario<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href=# id="nomb">nombre apellido</a></li>
+                      <li><a href=# onclick="logout()">Cerrar Sesión</a></li>
+                    </ul>
+                  </li>
+                </ul>
+
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="home" class="slider-area">
+    <div class="bend niceties preview-2">
+      <div id="ensign-nivoslider" class="slides">
+      </div>
+    </div>
+  </div>
+
+  <div class="header-bg page-area">
+    <div class="home-overly"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="slider-content text-center">
+            <div class="header-bottom">
+              <div class="layer2 wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
+                <h1 class="title2">HOTEL MITDAD DEL MUNDO</h1>
+              </div>
+              <div class="layer3 wow zoomInUp" data-wow-duration="2s" data-wow-delay="1s">
+                <h2 class="title3">HABITACIONES DISPONIBLES</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="blog-page area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="page-head-blog">
+            <div class="single-blog-page">
+
+              <div class="clearfix"></div>
+
+
+              <div class="footer-area">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                      <div class="footer-content">
+                        <div class="footer-head">
+
+                          <img src="Reservas/img/habitaciones/habitacionestandar.jpg">
+
+                        </div>
+                        <form action="#">
+                          <h3>¿Cuantas habitaciones desea reservar?</h3>
+                          <h6>Máximo 4 habitaciones disponibles</h6>
+                          <div class="search-option">
+                            <input type="text" id="habitaciones" placeholder="Número de..." value="1">
+
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                      <div class="footer-content">
+                        <div class="footer-head">
+                          <h4>HABITACIÓN ESTANDARD</h4>
+                          <p>
+                           
+                            Las habitaciones standard del Hotel Mitad del Mundo 
+                            le ofrecen espacios confortables e íntimos. Con un estilo
+                             sobrio y acogedor, estas luminosas estancias están 
+                             equipadas con todas las comodidades que necesita durante 
+                             sus vacaciones y su viaje de negocios. Descanse en un 
+                             ambiente tranquilo y elegante en el que encontrará una
+                              hermosa vista a los alrededores del hotel. 
+                          </p>
+
+                          <i><img src="Reservas/img/habitaciones/1.jpg" alt=""></i>&nbsp;
+                          <i><img src="Reservas/img/habitaciones/20.jpg" alt=""></i>&nbsp;
+                          <i><img src="Reservas/img/habitaciones/2.jpg" alt=""></i>&nbsp;
+                          <i><img src="Reservas/img/habitaciones/3.jpg" alt=""></i>
+                          <i><img src="Reservas/img/habitaciones/4.jpg" alt=""></i><br><br>
+                          <p>
+                            <i>
+                              <label for="from">Entrada</label>
+                              <input type="button" id="entrada" class="datepickerEntrada">
+                            </i>
+
+                            <i>
+                              <label for="from">Salida</label>
+                              <input type="button" id="salida"  class="datepickerSalida">
+                            </i><br><br>
+                          <h4>Precios</h4>
+                          <table border="1">
+                            <thead>
+                              <td class="tpxn">NOCHES</td>
+                              <td class="tpxn">PRECIO POR NOCHE</td>
+                              <td class="tpxn">TOTAL</td>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <label id="noche" class="imprimirNoche">0</label>
+                                </td>
+                                <td class="pxn"> <label id="pNoche">30</label>$</td>
+                                <td class="pxn"> <label id="total">0</label>$</td>
+                              </tr>
+                            </tbody>
+                          </table>
+
+                          </p>
+
+                          <span class="aniadirButton reservarAhora" data-show-dialog="my-confirm-dialog" id="activado">AÑADIR</span>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                      <div class="footer-content">
+                        <div class="footer-head">
+                          <h6 id="tit">Número de adultos:</h6>
+                          <div class="flicker">
+                            <p>
+                              <input type="radio" name="Npersonas" checked> 1<br>
+                              <input type="radio" name="Npersonas"> 2<br>
+                              <input type="radio" name="Npersonas"> 3<br>
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="my-confirm-dialog" class="dialog-overlay">
+
+              <div class="dialog-card">
+
+                <div class="dialog-question-sign"><i class="fa fa-question"></i></div>
+
+                <div class="dialog-info">
+
+                  <h5>¿Desear Reservar la habitacion?</h5>
+                  <h6>HABITACIÓN ESTANDARD</h6>
+
+                  <table>
+                    <thead>
+
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td> <label>ENTRADA:</label></td>
+                        <td> <label id="notaEntrada"></label></td>
+
+                      </tr>
+                      <tr>
+                        <td><label>SALIDA:</label></td>
+                        <td><label id="notaSalida"></label></td>
+                      </tr>
+
+                      <tr>
+                        <td> <label>ADULTOS:</label></td>
+                        <td> <label id="ingresoAdulto"></label></td>
+                      </tr>
+                      <tr>
+                        <td> <label>HABITACIONES:</label></td>
+                        <td> <label id="numeroHabitaciones"></label></td>
+                      </tr>
+                      <tr>
+                        <td> <label>NOCHES:</label></td>
+                        <td> <label id="numeroNoches"></label></td>
+                      </tr>
+                      <tr>
+                        <td> <label>TOTAL RESERVA:</label>&nbsp;</td>
+                        <td> <label id="totalPagar"></label>$</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+                  <p id="reserva"></p>
+                  <button class="dialog-confirm-button">Si</button>
+                  <button class="dialog-reject-button">No</button>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="footer-area">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="footer-content">
+                      <div class="footer-head">
+
+                        <img src="Reservas/img/habitaciones/habitacionsuperior.jpg">
+
+                      </div>
+                      <form action="#">
+                        <h3>¿Cuantas habitaciones desea reservar?</h3>
+                        <h6>Máximo 4 habitaciones disponibles</h6>
+                        <div class="search-option">
+                          <input type="text" id="habitaciones2" placeholder="Número de..." value="1">
+
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="footer-content">
+                      <div class="footer-head">
+                        <h4>HABITACIÓN SUPERIOR</h4>
+                        <p>
+                          Las habitaciones superiores del Hotel Mitad del Mundo
+                           son el alojamiento perfecto para largas estadías. Viva 
+                           unas vacaciones de ensueño en familia, en pareja y con 
+                          amigos y disfrute de los servicios exclusivos que ponemos
+                          a su disposición. Estos elegantes departamentos cuentan
+                          con dos habitaciones, dos baños, sala de estar, comedor
+                          y una acogedora cocina. Son ideales para contar con la
+                           máxima libertad y privacidad en Quito. 
+                        </p>
+
+                        <i><img src="Reservas/img/habitaciones/5.jpg" alt=""></i>&nbsp;
+                        <i><img src="Reservas/img/habitaciones/6.jpg"  alt=""></i>&nbsp;
+                        <i><img src="Reservas/img/habitaciones/19.jpg"  alt=""></i>&nbsp;
+                        <i><img src="Reservas/img/habitaciones/7.jpg"  alt=""></i>
+                        <i><img src="Reservas/img/habitaciones/8.jpg"  alt=""></i><br><br>
+                        <p>
+                          <i>
+                            <label for="from">Entrada</label>
+                            <input type="button" id="entrada2" class="datepickerEntrada">
+                          </i>
+
+                          <i>
+                            <label for="from">Salida</label>
+                            <input type="button" id="salida2" class="datepickerSalida">
+                          </i><br><br>
+                        <h4>Precios</h4>
+                        <table border="1">
+                          <thead>
+                            <td class="tpxn">NOCHES</td>
+                            <td class="tpxn">PRECIO POR NOCHE</td>
+                            <td class="tpxn">TOTAL</td>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <label id="noche2" class="imprimirNoche">0</label>
+                              </td>
+                              <td class="pxn"> <label id="pNoche2">40</label>$</td>
+                              <td class="pxn"> <label id="total2">0</label>$</td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        </p>
+
+                        <span class="aniadirButton2 reservarAhora" data-show-dialog="my-confirm-dialog2" id="activado">AÑADIR</span>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="footer-content">
+                      <div class="footer-head">
+                        <h6 id="tit">Número de adultos:</h6>
+                        <div class="flicker">
+                          <p>
+                            <input type="radio" name="Npersonas2" checked> 1<br>
+                            <input type="radio" name="Npersonas2"> 2<br>
+                            <input type="radio" name="Npersonas2"> 3<br>
+                          </p>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="my-confirm-dialog2" class="dialog-overlay">
+
+            <div class="dialog-card">
+
+              <div class="dialog-question-sign"><i class="fa fa-question"></i></div>
+
+              <div class="dialog-info">
+
+                <h5>¿Desear Reservar la habitacion?</h5>
+                <h6>HABITACIÓN SUPERIOR</h6>
+
+                <table>
+                  <thead>
+
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> <label>ENTRADA:</label></td>
+                      <td> <label id="notaEntrada2"></label></td>
+
+                    </tr>
+                    <tr>
+                      <td><label>SALIDA:</label></td>
+                      <td><label id="notaSalida2"></label></td>
+                    </tr>
+
+                    <tr>
+                      <td> <label>ADULTOS:</label></td>
+                      <td> <label id="ingresoAdulto2"></label></td>
+                    </tr>
+                    <tr>
+                      <td> <label>HABITACIONES:</label></td>
+                      <td> <label id="numeroHabitaciones2"></label></td>
+                    </tr>
+                    <tr>
+                      <td> <label>NOCHES:</label></td>
+                      <td> <label id="numeroNoches2"></label></td>
+                    </tr>
+                    <tr>
+                      <td> <label>TOTAL RESERVA:</label>&nbsp;</td>
+                      <td> <label id="totalPagar2"></label>$</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+
+                <p id="reserva"></p>
+                <button class="dialog-confirm-button">Si</button>
+                <button class="dialog-reject-button">No</button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+<div class="footer-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="footer-content">
+          <div class="footer-head">
+
+            <img src="Reservas/img/habitaciones/habitacionejecutiva.webp">
+
+          </div>
+          <form action="#">
+            <h3>¿Cuantas habitaciones desea reservar?</h3>
+            <h6>Máximo 4 habitaciones disponibles</h6>
+            <div class="search-option">
+              <input type="text" id="habitaciones3" placeholder="Número de..." value="1">
+
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="footer-content">
+          <div class="footer-head">
+            <h4>HABITACIÓN EJECUTIVE</h4>
+            <p>
+              Las habitaciones executive del Hotel Mitad del Mundo 
+              le ofrecen el plus de calidad que busca en su viaje de 
+              negocios en Quito. Descanse en el corazón de la ciudad y
+             a pocos metros del Palacio de Congresos. Acceda a su propia
+              área de trabajo incluida en estas elegantes estancias y 
+              acomódese en nuestras confortables habitaciones. Disfrute
+              de todos los servicios que ponemos a su disposición en estos
+              alojamientos y saboree el exquisito desayuno buffet
+              que se incluye con la reserva de esta habitación.
+
+            </p>
+
+            <i><img src="Reservas/img/habitaciones/9.jpg"  alt=""></i>&nbsp;
+            <i><img src="Reservas/img/habitaciones/10.jpg"  alt=""></i>&nbsp;
+            <i><img src="Reservas/img/habitaciones/18.jpg"  alt=""></i>&nbsp;
+            <i><img src="Reservas/img/habitaciones/11.jpg"  alt=""></i>
+            <i><img src="Reservas/img/habitaciones/12.jpg"  alt=""></i><br><br>
+            <p>
+              <i>
+                <label for="from">Entrada</label>
+                <input type="button" id="entrada3" class="datepickerEntrada">
+              </i>
+
+              <i>
+                <label for="from">Salida</label>
+                <input type="button" id="salida3" class="datepickerSalida">
+              </i><br><br>
+            <h4>Precios</h4>
+            <table border="1">
+              <thead>
+                <td class="tpxn">NOCHES</td>
+                <td class="tpxn">PRECIO POR NOCHE</td>
+                <td class="tpxn">TOTAL</td>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <label id="noche3"  class="imprimirNoche">0</label>
+                  </td>
+                  <td class="pxn"> <label id="pNoche3">50</label>$</td>
+                  <td class="pxn"> <label id="total3">0</label>$</td>
+                </tr>
+              </tbody>
+            </table>
+
+            </p>
+
+            <span class="aniadirButton3 reservarAhora" data-show-dialog="my-confirm-dialog3" id="activado">AÑADIR</span>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="footer-content">
+          <div class="footer-head">
+            <h6 id="tit">Número de adultos:</h6>
+            <div class="flicker">
+              <p>
+                <input type="radio" name="Npersonas3" checked> 1<br>
+                <input type="radio" name="Npersonas3"> 2<br>
+                <input type="radio" name="Npersonas3"> 3<br>
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="my-confirm-dialog3" class="dialog-overlay">
+
+<div class="dialog-card">
+
+  <div class="dialog-question-sign"><i class="fa fa-question"></i></div>
+
+  <div class="dialog-info">
+
+    <h5>¿Desear Reservar la habitacion?</h5>
+    <h6>HABITACIÓN EJECUTIVE</h6>
+
+    <table>
+      <thead>
+
+      </thead>
+      <tbody>
+        <tr>
+          <td> <label>ENTRADA:</label></td>
+          <td> <label id="notaEntrada3"></label></td>
+
+        </tr>
+        <tr>
+          <td><label>SALIDA:</label></td>
+          <td><label id="notaSalida3"></label></td>
+        </tr>
+
+        <tr>
+          <td> <label>ADULTOS:</label></td>
+          <td> <label id="ingresoAdulto3"></label></td>
+        </tr>
+        <tr>
+          <td> <label>HABITACIONES:</label></td>
+          <td> <label id="numeroHabitaciones3"></label></td>
+        </tr>
+        <tr>
+          <td> <label>NOCHES:</label></td>
+          <td> <label id="numeroNoches3"></label></td>
+        </tr>
+        <tr>
+          <td> <label>TOTAL RESERVA:</label>&nbsp;</td>
+          <td> <label id="totalPagar3"></label>$</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <p id="reserva"></p>
+    <button class="dialog-confirm-button">Si</button>
+    <button class="dialog-reject-button">No</button>
+
+  </div>
+
+</div>
+
+</div>
+
+<div class="footer-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="footer-content">
+          <div class="footer-head">
+
+            <img src="Reservas/img/habitaciones/juniorsuite.jpg">
+
+          </div>
+          <form action="#">
+            <h3>¿Cuantas habitaciones desea reservar?</h3>
+            <h6>Máximo 4 habitaciones disponibles</h6>
+            <div class="search-option">
+              <input type="text" id="habitaciones4" placeholder="Número de..." value="1">
+
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="footer-content">
+          <div class="footer-head">
+            <h4>JUNIOR SUITE</h4>
+            <p>
+              Para los que buscan un descanso exclusivo.
+              Las habitaciones junior suite del Mitad del Mundo 
+              le ofrecen amplios y elegantes espacios en los que se incluye
+              una confortable sala de estar. Disfrute de la máxima
+              comodidad y de todas las atenciones que desea en sus
+              vacaciones para vivir una experiencia de descanso única
+              en pleno corazón de la ciudad. Acceda a servicios 
+              exclusivos con la reserva de esta habitación como nuestro
+              delicioso desayuno buffet. Hospédese con la máxima 
+              calidad en la Junior Suite.
+            </p>
+
+            <i><img src="Reservas/img/habitaciones/13.jpg"  alt=""></i>&nbsp;
+            <i><img src="Reservas/img/habitaciones/14.jpg"  alt=""></i>&nbsp;
+            <i><img src="Reservas/img/habitaciones/17.jpg"  alt=""></i>&nbsp;
+            <i><img src="Reservas/img/habitaciones/15.jpg"  alt=""></i>
+            <i><img src="Reservas/img/habitaciones/16.jpg"  alt=""></i><br><br>
+            <p>
+              <i>
+                <label for="from">Entrada</label>
+                <input type="button" id="entrada4" class="datepickerEntrada">
+              </i>
+
+              <i>
+                <label for="from">Salida</label>
+                <input type="button" id="salida4" class="datepickerSalida">
+              </i><br><br>
+            <h4>Precios</h4>
+            <table border="1">
+              <thead>
+                <td class="tpxn">NOCHES</td>
+                <td class="tpxn">PRECIO POR NOCHE</td>
+                <td class="tpxn">TOTAL</td>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <label id="noche4"  class="imprimirNoche">0</label>
+                  </td>
+                  <td class="pxn"> <label id="pNoche4">60</label>$</td>
+                  <td class="pxn"> <label id="total4">0</label>$</td>
+                </tr>
+              </tbody>
+            </table>
+
+            </p>
+
+            <span class="aniadirButton4 reservarAhora " data-show-dialog="my-confirm-dialog4" id="activado">AÑADIR</span>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="footer-content">
+          <div class="footer-head">
+            <h6 id="tit">Número de adultos:</h6>
+            <div class="flicker">
+              <p>
+                <input type="radio" name="Npersonas4" checked> 1<br>
+                <input type="radio" name="Npersonas4"> 2<br>
+                <input type="radio" name="Npersonas4"> 3<br>
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="my-confirm-dialog4" class="dialog-overlay">
+
+<div class="dialog-card">
+
+  <div class="dialog-question-sign"><i class="fa fa-question"></i></div>
+
+  <div class="dialog-info">
+
+    <h5>¿Desear Reservar la habitacion?</h5>
+    <h6>JUNIOR SUITE</h6>
+
+    <table>
+      <thead>
+
+      </thead>
+      <tbody>
+        <tr>
+          <td> <label>ENTRADA:</label></td>
+          <td> <label id="notaEntrada4"></label></td>
+
+        </tr>
+        <tr>
+          <td><label>SALIDA:</label></td>
+          <td><label id="notaSalida4"></label></td>
+        </tr>
+
+        <tr>
+          <td> <label>ADULTOS:</label></td>
+          <td> <label id="ingresoAdulto4"></label></td>
+        </tr>
+        <tr>
+          <td> <label>HABITACIONES:</label></td>
+          <td> <label id="numeroHabitaciones4"></label></td>
+        </tr>
+        <tr>
+          <td> <label>NOCHES:</label></td>
+          <td> <label id="numeroNoches4"></label></td>
+        </tr>
+        <tr>
+          <td> <label>TOTAL RESERVA:</label>&nbsp;</td>
+          <td> <label id="totalPagar4"></label>$</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <p id="reserva"></p>
+    <button class="dialog-confirm-button">Si</button>
+    <button class="dialog-reject-button">No</button>
+
+  </div>
+
+</div>
+
+</div>
+            <div class="footer-area-bottom">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="copyright text-center">
+                          <div class="footer-icons">
+                            <ul>
+                              <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                              </li>
+                              <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                              </li>
+                              <li>
+                                <a href="#"><i class="fa fa-google"></i></a>
+                              </li>
+                              <li>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="footer-contacts">
+                            <p><span>Tel:</span> +51 941 269 413</p>
+                            <p><span>Email:</span> AQPWORLD@outlook.com</p>
+                            <p><span>Working Hours:</span> 9am-5pm</p>
+
+                            <p>
+                              &copy; Copyright <strong>AqpUCSM</strong>. All Rights Reserved
+                            </p>
+                            <div class="credits">
+                          </div>
+                      </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+            <script src="Reservas/lib/jquery/jquery.min.js"></script>
+            <script src="Reservas/lib/bootstrap/js/bootstrap.min.js"></script>
+            <script src="Reservas/lib/owlcarousel/owl.carousel.min.js"></script>
+            <script src="Reservas/lib/venobox/venobox.min.js"></script>
+            <script src="Reservas/lib/knob/jquery.knob.js"></script>
+            <script src="Reservas/lib/wow/wow.min.js"></script>
+            <script src="Reservas/lib/parallax/parallax.js"></script>
+            <script src="Reservas/lib/easing/easing.min.js"></script>
+            <script src="Reservas/lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+            <script src="Reservas/lib/appear/jquery.appear.js"></script>
+            <script src="Reservas/lib/isotope/isotope.pkgd.min.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+            <script src="Login/appLogin.js"></script>
+            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            <script src="Reservas/contactform/contactform.js"></script>
+            <script src="Reservas/js/main.js"></script>
+</body>
+</html>

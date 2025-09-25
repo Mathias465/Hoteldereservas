@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Contactos</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <link href="Contactos/img/favicon.png" rel="icon">
+  <link href="Contactos/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+
+  <link href="Contactos/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="Contactos/lib/nivo-slider/css/nivo-slider.css" rel="stylesheet">
+  <link href="Contactos/lib/owlcarousel/owl.carousel.css" rel="stylesheet">
+  <link href="Contactos/lib/owlcarousel/owl.transitions.css" rel="stylesheet">
+  <link href="Contactos/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="Contactos/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="Contactos/lib/venobox/venobox.css" rel="stylesheet">
+
+  <link href="Contactos/css/nivo-slider-theme.css" rel="stylesheet">
+
+  <link href="Contactos/css/style.css" rel="stylesheet">
+
+  <link href="Contactos/css/responsive.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example" onload="analizarLogueo()">
+
+  <div id="preloader"></div>
+  <header>
+    <div id="sticker" class="header-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+
+            <nav class="navbar navbar-default">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+                <a class="navbar-brand page-scroll sticky-logo" href="index.html">
+                    <h1><span>H</span>otel AqpWorld</h1>
+                  
+								</a>
+              </div>
+              <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active">
+                    <a class="page-scroll" href="index.html">Inicio</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="servicios.html">Servicios</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="reservas.html">Reservas</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="galeria.html">Galería</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="restaurante.html">Restaurante</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#home">Contactos</a>
+                  </li>
+                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" id="usuariologed">Usuario<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href=# id="nomb">nombre apellido</a></li>
+                      <li><a href=# onclick="logout()">Cerrar Sesión</a></li>
+                    </ul> 
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="home" class="slider-area">
+    <div class="bend niceties preview-2">
+      <div id="ensign-nivoslider" class="slides">
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="header-bg page-area">
+    <div class="home-overly"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="slider-content text-center">
+            <div class="header-bottom">
+              <div class="layer2 wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
+                <h1 class="title2">HOTEL AQPWORLD</h1>
+              </div>
+              <div class="layer3 wow zoomInUp" data-wow-duration="2s" data-wow-delay="1s">
+                <h2 class="title3">CONTACTANOS</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+     
+  <div class="ubicacion">
+    <center></h2>NUESTRA UBICACIÓN  </h2></center><hr> 
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2101.663135462878!2d-71.55992804185989!3d-16.43818931029653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1758754991111!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>   
+  <div class="single-post-comments">
+    <div class="comment-respond">
+      <center><h3 class="comment-reply-title">ENVIANOS TU MENSAJE </h3></center>
+      <form action="https://localhost/Proyecto_Web/Contactos/enviar.php" method="POST" class="form_contact">
+        <div class="">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <p>Nombre *</p>
+            <input type="text" id="names" name="nombre" required> 
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <p>Telefono</p>
+            <input type="text" id="phone" name="telefono">
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <p>Email *</p>
+            <input type="text" id="email" name="correo" required>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+          </div>
+          <div class="col-lg-12 col-md-12 col-sm-12 comment-form-comment">
+            <p>Mensaje</p>
+            <textarea id="mensaje" cols="85" rows="10" name=" mensaje" required></textarea>          
+          </div>
+          <center><input type="submit" value="Enviar Mensaje" id="btnSend"></center>
+        </div>
+      </form>
+    </div>
+  </div> 
+
+  <footer>
+    <div class="footer-area">
+      <div class="container">
+        <div class="row"> 
+          <h4>INFORMACIÓN</h4>
+                <div class="footer-contacts">
+                  <p><span>Telf: </span> 941 269 413</p>
+                  <p><span>Email: </span>AqpWorld@gmail.com</p>
+                  <p><span>Horario de atención: </span>24/7</p>
+                </div>
+                <div class="footer-icons">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-google"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </li>
+                  </ul>
+                </div>      
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <script src="Contactos/lib/jquery/jquery.min.js"></script>
+  <script src="Contactos/lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="Contactos/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="Contactos/lib/venobox/venobox.min.js"></script>
+  <script src="Contactos/lib/knob/jquery.knob.js"></script>
+  <script src="Contactos/lib/wow/wow.min.js"></script>
+  <script src="Contactos/lib/parallax/parallax.js"></script>
+  <script src="Contactos/lib/easing/easing.min.js"></script>
+  <script src="Contactos/lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+  <script src="Contactos/lib/appear/jquery.appear.js"></script>
+  <script src="Contactos/lib/isotope/isotope.pkgd.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+
+  <script src="Contactos/contactform/contactform.js"></script>
+
+  <script src="Contactos/js/main.js"></script>
+  <script src="Login/appLogin.js"></script>
+</body>
+
+</html>

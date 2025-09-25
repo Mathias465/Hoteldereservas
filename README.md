@@ -1,7 +1,7 @@
 Integrantes:
-Apaza Cornejo Mathias Luis Andre
-Hinojosa Cruz Hector Antonio
-Santa Cruz Quispe Edgar Adrian
+Apaza Cornejo Mathias Luis Andre, 
+Hinojosa Cruz Hector Antonio, 
+Santa Cruz Quispe Edgar Adrian, 
 Torres Vargas Nilson Steven
 
 Descripción del tema

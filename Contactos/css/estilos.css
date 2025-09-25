@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing:border-box;
+  }
+  
+  :focus{
+      outline: none;
+  }
+  
+  body{
+      background-image: url(../img/slider1\ -\ Copy.jpg);
+
+      
+  }
+  
+ /*SECTION*/
+  
+  .form_wrap{
+      width: 1050px;
+      height: 530px;
+      margin: 50px auto;
+      display: flex;
+      float: 30px;
+      margin-bottom: 35px;
+
+  
+      background: rgba(7, 111, 209, 0.452);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 0px 20px rgba(26, 22, 22, 0.2);
+      color: #ffffff;
+  }
+  
+  /* MENSAJE EXITO*/
+  .mensaje_exito{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .mensaje_exito h1{
+      font-size: 35px;
+      display: block;
+      text-align: center;
+      margin-bottom:  20px;
+  
+  }
+  a{
+      color: rgb(255, 196, 1);
+      font-size: 20px;
+  }
+  .actionBar{
+    background: rgb(0, 0, 0);
+    color: white;
+    padding-bottom: 20px;
+    font-size: 30px;
+  
+  }
+  .hColor{
+      color: #3EC1D5;
+      font-family: serif;
+  }
+
+
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+	background-color: #efefef;
+}
+
+body{
+	font:14px/1.5 Arial, Helvetica, sans-serif;
+	margin:0;
+}
+
+
+/* cuadro de dialogo : http://www.bloguero-ec.com 
+   demostración :
+*/
+
+/*responsive en ancho max-1000px */
+
+
+
+
+.main-content{
+    margin-bottom: 75px;
+}
+
+/* remover estilos y utilizar como mas le convenga */
+
+.reservarAhora{
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+    background-color: #ff1f2b;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font: bold 20px sans-serif;
+    color: #ffffff;
+    width: 330px;
+    padding: 18px 0;
+    margin: 20px auto;
+    z-index: 1;
+    border-radius: 3px;
+}
+
+.reservarAhora:first-of-type{
+    margin-top:10%;
+}
+
+.reservarAhora:hover{
+    opacity:0.96;
+}
+
+.reservarAhora:active{
+    position:relative;
+    bottom:-1px;
+}
+
+
+
+
